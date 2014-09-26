@@ -23,18 +23,17 @@
         <div class="wide-container createBlogPost" id='createBlogContainer'>
         <div class='space'>
         </div>
-            <div class='createInputs'>
-            <h1>Create a New Blog Post!</h1>
-            <input type='text' placeholder='Post Title' class='addBlogTitle' ng-model='postTitle'></input>
-            <textarea name='text' placeholder='Post Content' class='addBlogContent' ng-model='postBody'></textarea>
-            <button ng-click='postContent()'>Submit Post</button>
+            <h1>Recent Blog Posts</h1>
+            <div class='blogPosts' ng-repeat='post in blogData | orderBy: "createdAt" : true'>
+            <h2>{{post.title}}</h2>
+            <h5> Posted {{post.createdAt | date: "EEEE, MMMM d, 'at' h:m a 'MST'"}}</h5>
+            <p>{{post.body}}</p>
             </div>
         </div>
         <div class='spacer-vertical top'>
         </div>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.2.2/textAngular.min.js'></script>
     <!-- <script src='App/angular-route.js'></script> -->
     <script src='App/app.js'></script>
     <script src='App/mainCtrl.js'></script>

@@ -1,0 +1,28 @@
+#createBlogContainer {
+	height: 100%;
+}
+.space{
+	height: 45px;
+}
+.createInputs {
+	display: flex;
+	flex-direction: column;
+	content-align: flex-start;
+}
+.addBlogTitle {
+	border-radius: 5px;
+	border: 1px solid rgba(34, 51, 68, .8);
+	margin: 40px 5px;
+	width: 200px;
+	padding: 3px;
+}
+.addBlogContent {
+	border-radius: 5px;
+	border: 1px solid rgba(34, 51, 68, .8);
+	margin: 40px 5px;
+	height: 500px;
+	padding: 3px;
+}
+button {
+	align-self: flex-end;
+}
