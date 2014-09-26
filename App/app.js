@@ -1,4 +1,4 @@
-var app = angular.module('app', []);
+var app = angular.module('app', ['textAngular']);
 
 app.config(function($httpProvider){
 	$httpProvider.interceptors.push('httpRequestInterceptor');

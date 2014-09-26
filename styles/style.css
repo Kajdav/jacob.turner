@@ -153,8 +153,8 @@ h1 {
 .space-vertical.bottom {
 	height: auto;
 }
-button {	width: 200px;
-}
+/*button {	width: 200px;
+}*/
 @media (max-width:600px) {
 	.content {
 		width: 90%;

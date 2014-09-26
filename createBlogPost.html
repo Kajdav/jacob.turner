@@ -8,6 +8,8 @@
         <link rel='stylesheet' href='styles/blogStyle.css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel='stylesheet' href='App/textAngular/textAngular.min.css'>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
     </head>
@@ -26,7 +28,8 @@
             <div class='createInputs'>
             <h1>Create a New Blog Post!</h1>
             <input type='text' placeholder='Post Title' class='addBlogTitle' ng-model='postTitle'></input>
-            <textarea name='text' placeholder='Post Content' class='addBlogContent' ng-model='postBody'></textarea>
+<!--             <textarea name='text' placeholder='Post Content' class='addBlogContent' ng-model='postBody'></textarea> -->
+            <text-angular ng-model="htmlVariable"></text-angular>
             <button ng-click='postContent()'>Submit Post</button>
             </div>
         </div>
@@ -34,7 +37,8 @@
         </div>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.2.2/textAngular.min.js'></script>
+    <script src='App/textAngular/textAngular-sanitize.min.js'></script>
+    <script src='App/textAngular/textAngular.min.js'></script>
     <!-- <script src='App/angular-route.js'></script> -->
     <script src='App/app.js'></script>
     <script src='App/mainCtrl.js'></script>
