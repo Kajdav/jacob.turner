@@ -1,0 +1,22 @@
+#createBlogContainer {
+	height: 100%;
+}
+
+.createInputs {
+	display: flex;
+	flex-direction: column;
+	content-align: flex-start;
+	margin-top: 75px;
+}
+.addBlogTitle {
+	border-radius: 5px;
+	border: 1px solid rgba(34, 51, 68, .8);
+	margin: 40px 5px;
+	width: 200px;
+}
+.addBlogContent {
+	border-radius: 5px;
+	border: 1px solid rgba(34, 51, 68, .8);
+	margin: 40px 5px;
+	height: 500px;
+}
