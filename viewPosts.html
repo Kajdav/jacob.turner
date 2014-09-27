@@ -18,6 +18,16 @@
         <div class="header">
             <div class="top-bar">
                 <img src="attachments/me-small.jpg">
+                <div class='nav'>
+                    <!-- <button ng-click="go('http://www.google.com')">Home</button>
+                    <button>New Post</button>
+                    <button>View Blog</button>
+                    <button>Portfolio</button>
+                    <button>About Me</button> -->
+                    <a href='index.html'>Home</a>
+                    <a href='createBlogPost.html'>New Post</a>
+                    <a href='viewPosts.html'>View BLog</a>
+                </div>
             </div>
         </div>
         <div class="wide-container createBlogPost" id='createBlogContainer'>
@@ -25,9 +35,9 @@
         </div>
             <h1>Recent Blog Posts</h1>
             <div class='blogPosts' ng-repeat='post in blogData | orderBy: "createdAt" : true'>
-            <h2>{{post.title}}</h2>
-            <h5> Posted {{post.createdAt | date: "EEEE, MMMM d, 'at' h:m a 'MST'"}}</h5>
-            <p>{{post.body}}</p>
+                <h2>{{post.title}}</h2><button ng-click='deleteButton(post.objectId)'>DELETE</button>
+                <h5> Posted {{post.createdAt | date: "EEEE, MMMM d, 'at' h:m a 'MST'"}}</h5>
+                <div ng-bind-html="post.body"></div>
             </div>
         </div>
         <div class='spacer-vertical top'>
@@ -35,6 +45,8 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
     <!-- <script src='App/angular-route.js'></script> -->
+    <script src='App/textAngular/textAngular-sanitize.min.js'></script>
+    <script src='App/textAngular/textAngular.min.js'></script>
     <script src='App/app.js'></script>
     <script src='App/mainCtrl.js'></script>
     <script src='App/dataService.js'></script>

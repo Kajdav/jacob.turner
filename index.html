@@ -10,7 +10,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
     </head>
-    <body>
+    <body ng-controller='mainCtrl'>
         <div class="background-image">
             <img src="attachments/background.jpg">
         </div>
@@ -18,11 +18,14 @@
             <div class="top-bar">
                 <img src="attachments/me-small.jpg">
                 <div class='nav'>
-                    <button>Home</button>
+                    <!-- <button ng-click="go('http://www.google.com')">Home</button>
                     <button>New Post</button>
                     <button>View Blog</button>
                     <button>Portfolio</button>
-                    <button>About Me</button>
+                    <button>About Me</button> -->
+                    <a href='index.html'>Home</a>
+                    <a href='createBlogPost.html'>New Post</a>
+                    <a href='viewPosts.html'>View BLog</a>
                 </div>
             </div>
         </div>
@@ -89,6 +92,8 @@ Five hours? Aw, man! Couldn't you just get me the death penalty?</p>
         </div> -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src='App/textAngular/textAngular-sanitize.min.js'></script>
+    <script src='App/textAngular/textAngular.min.js'></script>
     <!-- <script src='App/angular-route.js'></script> -->
     <script src='App/app.js'></script>
     <script src='App/mainCtrl.js'></script>

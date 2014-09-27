@@ -1,4 +1,4 @@
-var app = angular.module('app', ['textAngular']);
+var app = angular.module('app', ['textAngular', 'ngSanitize']);
 
 app.config(function($httpProvider){
 	$httpProvider.interceptors.push('httpRequestInterceptor');

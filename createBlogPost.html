@@ -20,6 +20,16 @@
         <div class="header">
             <div class="top-bar">
                 <img src="attachments/me-small.jpg">
+                <div class='nav'>
+                    <!-- <button ng-click="go('http://www.google.com')">Home</button>
+                    <button>New Post</button>
+                    <button>View Blog</button>
+                    <button>Portfolio</button>
+                    <button>About Me</button> -->
+                    <a href='index.html'>Home</a>
+                    <a href='createBlogPost.html'>New Post</a>
+                    <a href='viewPosts.html'>View BLog</a>
+                </div>
             </div>
         </div>
         <div class="wide-container createBlogPost" id='createBlogContainer'>
@@ -29,7 +39,7 @@
             <h1>Create a New Blog Post!</h1>
             <input type='text' placeholder='Post Title' class='addBlogTitle' ng-model='postTitle'></input>
 <!--             <textarea name='text' placeholder='Post Content' class='addBlogContent' ng-model='postBody'></textarea> -->
-            <text-angular ng-model="htmlVariable"></text-angular>
+            <text-angular ng-model="postBody"></text-angular>
             <button ng-click='postContent()'>Submit Post</button>
             </div>
         </div>

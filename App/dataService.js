@@ -14,5 +14,11 @@ app.service('dataService', function($http, $q) {
 			url: 'https://api.parse.com/1/classes/blog'
 		})
 	}
+	this.deletePost = function(objID) {
+		return $http({
+			method: 'DELETE',
+			url: 'https://api.parse.com/1/classes/blog/' + objID
+		})
+	}
 
 })
