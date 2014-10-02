@@ -14,87 +14,40 @@
         <div class="background-image">
             <img src="attachments/background.jpg">
         </div>
-        <div class="header">
             <div class="top-bar">
-                <img src="attachments/me-small.jpg">
                 <div class='nav'>
-                    <!-- <button ng-click="go('http://www.google.com')">Home</button>
-                    <button>New Post</button>
-                    <button>View Blog</button>
-                    <button>Portfolio</button>
-                    <button>About Me</button> -->
-                    <a href='index.html'>Home</a>
-                    <a href='createBlogPost.html'>New Post</a>
-                    <a href='viewPosts.html'>View BLog</a>
+                    <button ng-click="go('/home')">Home</button>
+                    <!-- <button ng-click="go('/new-post')">New Post</button> -->
+                    <button ng-click="go('/view-blog')">Blog</button>
+                    <button ng-click="go('/portfolio')">Portfolio</button>
+                    <button ng-click="go('/about-me')">About Me</button>
                 </div>
             </div>
-        </div>
         <div class="spacer-vertical top">
             <div class="floating-container personal-info">
                 <div class="spacer 1"></div>
                 <div class="spacer 2"></div>
                 <div class="content">
                      <h1>Jacob Turner</h1>
-<!--                      <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-                        <li><a href="#pages/aboutMe.html"><i class="fa fa-shield"></i> About Me</a></li>
-                        <li><a href="#pages/portfolio.html"><i class="fa fa-comment"></i> Portfolio</a></li>
-                    </ul> -->
                     <div class="share-buttons"> <a href="https://www.facebook.com/IsraelTurner"><i class="fa fa-facebook-square"></i></a>
- <a href="https://twitter.com/JIsraelTurner"><i class="fa fa-twitter-square"></i></a>
- <a href="https://www.linkedin.com/profile/view?id=362697720"><i class="fa fa-linkedin-square"></i></a>
- <a href="https://plus.google.com/+JacobTurner21"><i class="fa fa-google-plus-square"></i></a>
- <a href="https://github.com/Kajdav"><i class="fa fa-github-square"></i></a>
- <a href="mailto:jacob.israel.turner@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                         <a href="https://twitter.com/JIsraelTurner"><i class="fa fa-twitter-square"></i></a>
+                         <a href="https://www.linkedin.com/profile/view?id=362697720"><i class="fa fa-linkedin-square"></i></a>
+                         <a href="https://plus.google.com/+JacobTurner21"><i class="fa fa-google-plus-square"></i></a>
+                         <a href="https://github.com/Kajdav"><i class="fa fa-github-square"></i></a>
+                         <a href="mailto:jacob.israel.turner@gmail.com"><i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Here to....-->
-        <div class="wide-container portfolio">
-    <div class="work">
-        <h1>Some of my work...</h1>
-    </div>
-    <div class="flex-table">
-        <!-- <div class="row-1"> -->
-            <div class="floater">
-                <img src="attachments/wikimedia.jpg">
-            </div>
-            <div class="floater something">
-                <img src="attachments/medium.jpg">
-            </div>
-        <!-- </div> -->
-        <!-- <div class="row-2"> -->
-            <div class="floater">
-                <img src="attachments/slc-dentistry.jpg">
-            </div>
-            <div class="floater">
-                <img src="attachments/newsflash.jpg">
-            </div>
-        <!-- </div> -->
-    </div>
-</div>
-<div class="spacer-vertical bottom">
-    <div class="floating-container more-stuff">
-        <div class="content bio">
-                     <h1>About me</h1>
-                     <p>Obsoletely Fabulous
-Yes, except the Dave Matthews Band doesn't rock. Say what? No, she'll probably make me do it. We'll need to have a look inside you with this camera. I suppose I could part with 'one' and still be feared… Bender, quit destroying the universe!
-The Prisoner of Benda
-Stop! Don't shoot fire stick in space canoe! Cause explosive decompression! Dr. Zoidberg, that doesn't make sense. But, okay! OK, this has gotta stop. I'm going to remind Fry of his humanity the way only a woman can.
-They're like sex, except I'm having them!
-Five hours? Aw, man! Couldn't you just get me the death penalty?</p>
+        <a id='content'></a>
+        <div class='main'>
+            <div ng-view></div>
         </div>
-    </div>
-</div>
-<!-- ...here are page specific.  The rest of the page is the template for the SPA. -->
-<!--         <div ng-view>
-        </div> -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
     <script src='App/textAngular/textAngular-sanitize.min.js'></script>
     <script src='App/textAngular/textAngular.min.js'></script>
-    <!-- <script src='App/angular-route.js'></script> -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js'></script>
     <script src='App/app.js'></script>
     <script src='App/mainCtrl.js'></script>
     <script src='App/dataService.js'></script>
