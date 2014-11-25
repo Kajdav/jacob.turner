@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+    
+    <head>
+        <title>Jacob Turner</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+    </head>
+    <body ng-controller='mainCtrl'>
+        <div class="background-image">
+            <img src="attachments/background.jpg">
+        </div>
+ <!--            <div class="top-bar">
+                <div class='nav'>
+                    <button ng-click="go('/home')">Home</button>
+                    <button ng-click="go('/view-blog')">Blog</button>
+                    <button ng-click="go('/portfolio')">Portfolio</button>
+                    <button ng-click="go('/about-me')">About Me</button>
+                </div>
+            </div> -->
+        <div class="spacer-vertical top">
+            <div class="floating-container">
+                <div class="spacer 1"></div>
+                <div class="spacer 2"></div>
+                <div class="content" id='personal-info'>
+                     <h1 id='name'>Jacob Turner</h1>
+                    <div class="share-buttons"> <a href="https://www.facebook.com/IsraelTurner"><i class="fa fa-facebook-square"></i></a>
+                         <a href="https://twitter.com/JIsraelTurner"><i class="fa fa-twitter-square"></i></a>
+                         <a href="https://www.linkedin.com/profile/view?id=362697720"><i class="fa fa-linkedin-square"></i></a>
+                         <a href="https://plus.google.com/+JacobTurner21"><i class="fa fa-google-plus-square"></i></a>
+                         <a href="https://github.com/Kajdav"><i class="fa fa-github-square"></i></a>
+                         <!-- <a href="mailto:jacob.israel.turner@gmail.com"><i class="fa fa-envelope-o"></i></a> -->
+                    </div>
+                    <hr>
+                    <div class='share-buttons'>
+                        <a href='/blog'>Blog</a>
+                        <a href='/portfolio'>Portfolio</a>
+                        <a href='/jacob'>About Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id='content'></a>
+        <div class='main'>
+            <div ng-view></div>
+        </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/textAngular/1.2.2/textAngular-sanitize.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/textAngular/1.2.2/textAngular.min.js'></script>
+    <script src='App/app.js'></script>
+    <script src='App/mainCtrl.js'></script>
+    <script src='App/dataService.js'></script>
+    <script src='App/defaultHeader.js'></script>
+    </body>
+</html>
