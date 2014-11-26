@@ -5,19 +5,19 @@ app.config(function($httpProvider, $routeProvider, $locationProvider){
 	$routeProvider
 		.when('/', {})
 		.when('/new-post', {
-			templateUrl : 'templates/create-post.html',
+			templateUrl : 'app/templates/create-post.html',
 			controller : 'mainCtrl'
 		})
 		.when('/blog', {
-			templateUrl : 'templates/view-posts.html',
+			templateUrl : 'app/templates/view-posts.html',
 			controller : 'mainCtrl'
 		})
 		.when('/portfolio', {
-			templateUrl : 'templates/portfolio.html',
+			templateUrl : 'app/templates/portfolio.html',
 			controller : 'mainCtrl'
 		})
 		.when('/jacob', {
-			templateUrl : 'templates/about-me.html',
+			templateUrl : 'app/templates/about-me.html',
 			controller : 'mainCtrl'
 		})
 		.otherwise({

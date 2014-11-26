@@ -41,7 +41,6 @@ app.controller('mainCtrl', function($scope, $location, $anchorScroll, $q, dataSe
 		}
 		$scope.go = function(path) {
 			$location.path(path);
-			$scope.scrollTo('content');
 //This is semi-working. The routing works like a charm.
 //The anchor only works after clicking on the button a second time.
 //It takes a second click because the .scrollTo('content') is happening

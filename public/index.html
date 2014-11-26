@@ -27,7 +27,7 @@
                 <div class="spacer 1"></div>
                 <div class="spacer 2"></div>
                 <div class="content" id='personal-info'>
-                     <h1 id='name'>Jacob Turner</h1>
+                    <h1 id='name'>Jacob Turner</h1>
                     <div class="share-buttons"> <a href="https://www.facebook.com/IsraelTurner"><i class="fa fa-facebook-square"></i></a>
                          <a href="https://twitter.com/JIsraelTurner"><i class="fa fa-twitter-square"></i></a>
                          <a href="https://www.linkedin.com/profile/view?id=362697720"><i class="fa fa-linkedin-square"></i></a>
@@ -36,26 +36,26 @@
                          <!-- <a href="mailto:jacob.israel.turner@gmail.com"><i class="fa fa-envelope-o"></i></a> -->
                     </div>
                     <hr>
-                    <div class='share-buttons'>
-                        <a href='/blog'>Blog</a>
-                        <a href='/portfolio'>Portfolio</a>
-                        <a href='/jacob'>About Me</a>
+                    <div class='share-buttons' scroll-directive>
+                        <a ng-click='go("/blog")' class='nav' href=''>Blog</a>
+                        <a ng-click='go("/portfolio")'class='nav' href=''>Portfolio</a>
+                        <a ng-click='go("/jacob")' class='nav' href=''>About Me</a>
                     </div>
                 </div>
             </div>
         </div>
-        <a id='content'></a>
         <div class='main'>
-            <div ng-view></div>
+            <div ng-view id='content'></div>
         </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/textAngular/1.2.2/textAngular-sanitize.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/textAngular/1.2.2/textAngular.min.js'></script>
-    <script src='App/app.js'></script>
-    <script src='App/mainCtrl.js'></script>
-    <script src='App/dataService.js'></script>
-    <script src='App/defaultHeader.js'></script>
+    <script src='app/app.js'></script>
+    <script src='app/directive.js'></script>
+    <script src='app/mainCtrl.js'></script>
+    <script src='app/dataService.js'></script>
+    <script src='app/defaultHeader.js'></script>
     </body>
 </html>
